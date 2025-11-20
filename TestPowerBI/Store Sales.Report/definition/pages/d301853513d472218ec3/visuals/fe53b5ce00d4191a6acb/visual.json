@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "fe53b5ce00d4191a6acb",
+  "position": {
+    "x": 239.78436657681939,
+    "y": 210.45822102425876,
+    "z": 0,
+    "height": 263.93530997304583,
+    "width": 668.46361185983824
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "District"
+                    }
+                  },
+                  "Property": "DistrictID"
+                }
+              },
+              "queryRef": "District.DistrictID",
+              "nativeQueryRef": "DistrictID"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "District"
+                        }
+                      },
+                      "Property": "District"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "District.District",
+              "nativeQueryRef": "Count of District"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
