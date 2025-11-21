@@ -1,0 +1,301 @@
+table territory
+	lineageTag: 312948b2-b4ca-4275-a730-023d7d43b502
+
+	column Territory
+		dataType: string
+		lineageTag: 014269b9-4bc1-4161-bd37-f32f286768d6
+		summarizeBy: none
+		sourceColumn: territoryid
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created On'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9a3afb77-3e90-45c0-9e1e-10c8a8e68cbc
+		summarizeBy: none
+		sourceColumn: createdon
+
+		variation Variation
+			isDefault
+			relationship: eaed394f-db82-4928-bba4-bacad11609c3
+			defaultHierarchy: LocalDateTable_65b92f67-bf19-452c-b3b0-850955358095.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdby
+		dataType: string
+		lineageTag: 20e77501-7e6d-45d7-9396-365152a62753
+		summarizeBy: none
+		sourceColumn: createdby
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modified On'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 568f4176-aac1-4341-8357-b850af92137f
+		summarizeBy: none
+		sourceColumn: modifiedon
+
+		variation Variation
+			isDefault
+			relationship: a2bf1fd5-39d8-4f93-bca2-a3afe80b7a7d
+			defaultHierarchy: LocalDateTable_33c2e8d0-1520-4351-80cc-6483217e052e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedby
+		dataType: string
+		lineageTag: a9bce8f6-0843-4b22-a966-573a7ef6a2b6
+		summarizeBy: none
+		sourceColumn: modifiedby
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdonbehalfby
+		dataType: string
+		lineageTag: 66313fbf-025a-46af-811b-d16e16cb0b11
+		summarizeBy: none
+		sourceColumn: createdonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedonbehalfby
+		dataType: string
+		lineageTag: 4722e46a-3ce0-487e-8ff5-ddf27d81b187
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfby
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created By'
+		dataType: string
+		lineageTag: 108d65bc-3193-4584-96bc-14e46a6a9b26
+		summarizeBy: none
+		sourceColumn: createdbyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdbyyominame
+		dataType: string
+		lineageTag: 4643035c-b953-4ff3-ba35-98c78221d3ac
+		summarizeBy: none
+		sourceColumn: createdbyyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created By (Delegate)'
+		dataType: string
+		lineageTag: 2e207bf0-beed-4e48-8b8c-2668dab08bc1
+		summarizeBy: none
+		sourceColumn: createdonbehalfbyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdonbehalfbyyominame
+		dataType: string
+		lineageTag: 65e3eb95-eac6-4973-8cb6-71dcf18443fc
+		summarizeBy: none
+		sourceColumn: createdonbehalfbyyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modified By'
+		dataType: string
+		lineageTag: e1510c9f-612f-418f-b402-f6bb049ca39b
+		summarizeBy: none
+		sourceColumn: modifiedbyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedbyyominame
+		dataType: string
+		lineageTag: 8e27cca5-0de3-46b6-bd57-cd9f4155637b
+		summarizeBy: none
+		sourceColumn: modifiedbyyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modified By (Delegate)'
+		dataType: string
+		lineageTag: 9b9e4fea-897a-4e00-8bf0-2834ead30372
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfbyname
+
+		annotation SummarizationSetBy = Automatic
+
+	column modifiedonbehalfbyyominame
+		dataType: string
+		lineageTag: 2ed888d3-191d-4e7d-b997-a950bb7ef292
+		summarizeBy: none
+		sourceColumn: modifiedonbehalfbyyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column organizationid
+		dataType: string
+		lineageTag: edafb391-6ce9-416b-a297-26b62b111dae
+		summarizeBy: none
+		sourceColumn: organizationid
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Organization Id'
+		dataType: string
+		lineageTag: b591858d-be98-466c-af3f-2ada27229c8b
+		summarizeBy: none
+		sourceColumn: organizationidname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Import Sequence Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: c8217839-78d3-4d5a-97f5-cb6bacfd2749
+		summarizeBy: sum
+		sourceColumn: importsequencenumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Record Created On'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8ad5f0d7-3ba2-4452-bc8e-46b22dfe1217
+		summarizeBy: none
+		sourceColumn: overriddencreatedon
+
+		variation Variation
+			isDefault
+			relationship: 34fbd156-3181-40e0-a63a-28d56af4719c
+			defaultHierarchy: LocalDateTable_cdfa4d00-b51c-45e5-a012-f4bdbcd7fa3e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time Zone Rule Version Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9e60af28-c883-4dd2-846e-952a27a3a33f
+		summarizeBy: sum
+		sourceColumn: timezoneruleversionnumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'UTC Conversion Time Zone Code'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e04f0b2-d201-4f24-8f9d-21b438e7689f
+		summarizeBy: count
+		sourceColumn: utcconversiontimezonecode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Territory Name'
+		dataType: string
+		lineageTag: 4550bf0a-fd07-4318-8a33-3201c17b1d52
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 66ca3e32-a43b-40b5-8734-6361746ed344
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column managerid
+		dataType: string
+		lineageTag: 6a97575b-90b7-494d-b0fe-43f8c1136ffa
+		summarizeBy: none
+		sourceColumn: managerid
+
+		annotation SummarizationSetBy = Automatic
+
+	column entityimageid
+		dataType: string
+		lineageTag: 75ad1a27-90ac-4827-80f2-4d22a550c11e
+		summarizeBy: none
+		sourceColumn: entityimageid
+
+		annotation SummarizationSetBy = Automatic
+
+	column entityimage_url
+		dataType: string
+		lineageTag: af4ba6da-df99-46c1-854f-3f4969fe0019
+		summarizeBy: none
+		sourceColumn: entityimage_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Exchange Rate'
+		dataType: double
+		lineageTag: 99bf974d-1c95-4ec5-b775-41b33263c39d
+		summarizeBy: sum
+		sourceColumn: exchangerate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column transactioncurrencyid
+		dataType: string
+		lineageTag: 69eea3b3-3b5f-4803-91f8-dd99d467705e
+		summarizeBy: none
+		sourceColumn: transactioncurrencyid
+
+		annotation SummarizationSetBy = Automatic
+
+	column Currency
+		dataType: string
+		lineageTag: 28156ab2-0d83-440b-bb08-242ea3411e3b
+		summarizeBy: none
+		sourceColumn: transactioncurrencyidname
+
+		annotation SummarizationSetBy = Automatic
+
+	column Manager
+		dataType: string
+		lineageTag: f9350031-6eb1-48e4-8d80-f782bbe303e6
+		summarizeBy: none
+		sourceColumn: manageridname
+
+		annotation SummarizationSetBy = Automatic
+
+	column manageridyominame
+		dataType: string
+		lineageTag: 1edd0ab3-27f5-4a12-a946-26d9b9c98d54
+		summarizeBy: none
+		sourceColumn: manageridyominame
+
+		annotation SummarizationSetBy = Automatic
+
+	column parentterritoryid
+		dataType: string
+		lineageTag: fc645dd9-1bfa-4b3c-9a4e-dfaa01a59528
+		summarizeBy: none
+		sourceColumn: parentterritoryid
+
+		annotation SummarizationSetBy = Automatic
+
+	column Parent
+		dataType: string
+		lineageTag: dedcc9a1-5fe0-418e-a7ef-e245b550ebfd
+		summarizeBy: none
+		sourceColumn: parentterritoryidname
+
+		annotation SummarizationSetBy = Automatic
+
+	partition territory-5486d140-de15-4762-93ea-624167c7cde6 = m
+		mode: import
+		source =
+				let
+				    Source = CommonDataService.Database("org07b012cc.crm8.dynamics.com"),
+				    dbo_territory = Source{[Schema="dbo",Item="territory"]}[Data]
+				in
+				    dbo_territory
+
+	annotation PBI_ResultType = Table
+

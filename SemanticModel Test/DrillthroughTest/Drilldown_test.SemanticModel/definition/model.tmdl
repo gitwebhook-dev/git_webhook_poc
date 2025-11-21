@@ -1,0 +1,34 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Returns","People","Orders","territory","teamprofiles","teamroles","territory (2)"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Returns
+ref table DateTableTemplate_5d93f60a-828b-46f4-bb9f-13f11d3b2687
+ref table People
+ref table Orders
+ref table LocalDateTable_29207479-f712-4884-aeff-41c3e44b8cf8
+ref table LocalDateTable_976a7b96-fda6-4139-88a5-067b64c3966c
+ref table territory
+ref table LocalDateTable_65b92f67-bf19-452c-b3b0-850955358095
+ref table LocalDateTable_33c2e8d0-1520-4351-80cc-6483217e052e
+ref table LocalDateTable_cdfa4d00-b51c-45e5-a012-f4bdbcd7fa3e
+ref table teamprofiles
+ref table teamroles
+ref table 'territory (2)'
+ref table LocalDateTable_7bb665a8-abb7-4009-b43b-b6caa615b691
+ref table LocalDateTable_754bc64e-09d3-4a94-8a80-e8ec5c91d6f6
+ref table LocalDateTable_dc5f4f9e-300b-4473-96e7-01d3c818246e
+ref table Parameter
+
+ref cultureInfo en-US
+
