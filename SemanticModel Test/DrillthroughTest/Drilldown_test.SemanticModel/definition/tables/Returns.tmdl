@@ -1,0 +1,31 @@
+table Returns
+	lineageTag: b30221fa-1a6b-4f1b-b159-a37132d1ae58
+
+	column Column1
+		dataType: string
+		lineageTag: df1a15bc-a8d3-40e8-ba3d-530e2b86913c
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 73b69c9d-9361-40a1-9a31-deac0dcc9cb8
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Returns-851c0314-3e76-4558-8874-c2dfb61bea87 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\Sample\Sample - Superstore.xls"), null, true),
+				    Returns1 = Source{[Name="Returns"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Returns1,{{"Column1", type text}, {"Column2", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

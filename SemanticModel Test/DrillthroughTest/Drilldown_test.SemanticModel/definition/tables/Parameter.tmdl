@@ -1,0 +1,49 @@
+table Parameter
+	lineageTag: 7bdff1c5-8a2f-4236-9a84-7cb1ec15a8c9
+
+	column Parameter
+		lineageTag: 1e7f545a-f8fe-4507-b289-95c33c17e087
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parameter Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Parameter Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Fields'
+		isHidden
+		lineageTag: 452bc17e-3229-4098-8124-977a40757e46
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parameter Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Order'
+		isHidden
+		formatString: 0
+		lineageTag: e1d940db-770b-4242-9ca0-ba95f1d38413
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Parameter = calculated
+		mode: import
+		source =
+				{
+				    ("Category", NAMEOF('Orders'[Category]), 0),
+				    ("Sub-Category", NAMEOF('Orders'[Sub-Category]), 1),
+				    ("Product Name", NAMEOF('Orders'[Product Name]), 2)
+				}
+
+	annotation PBI_Id = 536f272e93914a75aab6ebc52361d93d
+

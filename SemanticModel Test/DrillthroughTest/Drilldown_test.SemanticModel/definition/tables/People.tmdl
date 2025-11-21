@@ -1,0 +1,31 @@
+table People
+	lineageTag: fda02968-d963-4c99-be8d-96a7e5c0868b
+
+	column Column1
+		dataType: string
+		lineageTag: e9a6bc5d-dc79-4f52-a90f-14d881db819c
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column2
+		dataType: string
+		lineageTag: 2fdec556-041d-4e1a-9593-b5ffcda5ea1c
+		summarizeBy: none
+		sourceColumn: Column2
+
+		annotation SummarizationSetBy = Automatic
+
+	partition People-a1d6ab5a-5f3d-485e-872c-86372392b731 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\Sample\Sample - Superstore.xls"), null, true),
+				    People1 = Source{[Name="People"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(People1,{{"Column1", type text}, {"Column2", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

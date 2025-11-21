@@ -1,0 +1,38 @@
+table teamroles
+	lineageTag: b8dbb3ac-8bf8-4a1a-bfaf-58d3c87ac37a
+
+	column teamroleid
+		dataType: string
+		lineageTag: d0a422d9-94a6-4b03-8fb9-dc3c3af7b0b8
+		summarizeBy: none
+		sourceColumn: teamroleid
+
+		annotation SummarizationSetBy = Automatic
+
+	column roleid
+		dataType: string
+		lineageTag: ff6d9aa6-512d-4439-b6eb-7406d6c25a3c
+		summarizeBy: none
+		sourceColumn: roleid
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamid
+		dataType: string
+		lineageTag: 660b5d90-0195-49df-a409-99b4b28e4578
+		summarizeBy: none
+		sourceColumn: teamid
+
+		annotation SummarizationSetBy = Automatic
+
+	partition teamroles-f761ab60-b8e5-4d20-b5c2-7a919597830f = m
+		mode: import
+		source =
+				let
+				    Source = CommonDataService.Database("org07b012cc.crm8.dynamics.com"),
+				    dbo_teamroles = Source{[Schema="dbo",Item="teamroles"]}[Data]
+				in
+				    dbo_teamroles
+
+	annotation PBI_ResultType = Table
+
