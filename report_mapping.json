@@ -1,10 +1,11 @@
 [
     {
-        "reportId": "",
-            "reportId": "",
-            "reportId": "",
-            "branchRreportId": "",
-        "reportPath": "",
-        "groupId": ""
+        "developReportId": "",
+        "uatReportId": "",
+        "productionReportId": "",
+        "developGroupId": "",
+        "uatGroupId": "",
+        "productionGroupId": "",
+        "reportPath": ""
     }
 ]
