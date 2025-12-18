@@ -4,10 +4,11 @@
     "productionGroupId": "152ad1b0-3ca4-4f0d-b994-92e4d22ba5a3",
     "reports": [
         {
-            "developReportId": "",
+            "developReportId": "2f3c4c0c-6d2a-4043-8b25-e33079e029e5",
             "uatReportId": "",
             "productionReportId": "",
-            "reportPath": ""
+            "reportPath": "SalesReport" , 
+            "developContainerId": 81
         }
     ]
 }

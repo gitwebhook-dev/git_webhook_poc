@@ -1,0 +1,625 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/1.4.0/schema.json",
+  "displayName": "Sentiment",
+  "name": "Bookmark675cb89075a639f32135",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.0",
+    "activeSection": "ReportSectionbbdbb50c0d042e6c52eb",
+    "sections": {
+      "ReportSectionbbdbb50c0d042e6c52eb": {
+        "visualContainers": {
+          "VisualContainer1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "4674d59c25e8adc230eb",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "d",
+                        "Entity": "Date",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Or": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 0,
+                                "Left": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "d"
+                                      }
+                                    },
+                                    "Property": "Running Year"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "1L"
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 0,
+                                "Left": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "d"
+                                      }
+                                    },
+                                    "Property": "Running Year"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "2L"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Running Year"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "29665ae05aed689384a4",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "m",
+                        "Entity": "Manufacturer",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "m"
+                                  }
+                                },
+                                "Property": "MfgisVanArsdel"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'Yes'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Manufacturer"
+                        }
+                      },
+                      "Property": "MfgisVanArsdel"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c7849aff87ab1807d1a5",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Month"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "84fe3d48460e3e6a4946",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SalesFact"
+                        }
+                      },
+                      "Property": "Sentiment"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Month"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "VisualContainer3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "32b3f776e1c0397debbc",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "d",
+                        "Entity": "Date",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "d"
+                                  }
+                                },
+                                "Property": "Running Year"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "1L"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Running Year"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "3485d4abc492a042e540",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "d",
+                        "Entity": "Date",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "d"
+                                  }
+                                },
+                                "Property": "Rolling Period"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'P-00'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Rolling Period"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "dcdefa001584c7820b28",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SalesFact"
+                        }
+                      },
+                      "Property": "Sentiment"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "multiRowCard",
+              "objects": {}
+            }
+          },
+          "VisualContainer4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3407648a6457b3685992",
+                  "type": "Advanced",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "d",
+                        "Entity": "Date",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "d"
+                                  }
+                                },
+                                "Property": "Running Year"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "1L"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Running Year"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "a0c93644ed98ca8b216b",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "d",
+                        "Entity": "Date",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "d"
+                                  }
+                                },
+                                "Property": "Rolling Period"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'P-00'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Rolling Period"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "ccfd4fd5a1ad62805a99",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SalesFact"
+                        }
+                      },
+                      "Property": "Sentiment Gap"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "multiRowCard",
+              "objects": {}
+            }
+          },
+          "VisualContainer5": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "VisualContainer6": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "bab04782ede2b16015e0",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "d",
+                        "Entity": "Date",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Or": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 0,
+                                "Left": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "d"
+                                      }
+                                    },
+                                    "Property": "Running Year"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "1L"
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 0,
+                                "Left": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "d"
+                                      }
+                                    },
+                                    "Property": "Running Year"
+                                  }
+                                },
+                                "Right": {
+                                  "Literal": {
+                                    "Value": "2L"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Running Year"
+                    }
+                  },
+                  "howCreated": 1
+                },
+                {
+                  "name": "020186b2c37112c97c01",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "m",
+                        "Entity": "Manufacturer",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "m"
+                                  }
+                                },
+                                "Property": "MfgisVanArsdel"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "'No'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Manufacturer"
+                        }
+                      },
+                      "Property": "MfgisVanArsdel"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "4544b3943d148901bd00",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Month"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "98a90836487a2774523b",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "SalesFact"
+                        }
+                      },
+                      "Property": "Sentiment"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Month"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
